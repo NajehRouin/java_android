@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/nomUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Nom"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+    <EditText
+        android:id="@+id/prenomUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/nomUpdate"
+        android:layout_marginTop="25dp"
+        android:hint="Prenom"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+    <EditText
+        android:id="@+id/emailUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/prenomUpdate"
+        android:layout_marginTop="25dp"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+    <EditText
+        android:id="@+id/numero_telUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/emailUpdate"
+        android:layout_marginTop="25dp"
+        android:hint="numero Tel"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+
+
+    <Button
+        android:id="@+id/Modifier"
+        android:layout_below="@+id/numero_telUpdate"
+        android:padding="8dp"
+        android:text="Modifier"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#64EAEC"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+
+
+        tools:ignore="UnknownId" />
+    <Button
+        android:id="@+id/supprimer"
+        android:layout_below="@+id/numero_telUpdate"
+        android:padding="8dp"
+        android:text="Supprimer"
+        android:backgroundTint="#ffff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/Modifier"
+
+        />
+    <Button
+        android:id="@+id/AnnulerUpdate"
+        android:layout_below="@+id/numero_telUpdate"
+        android:padding="8dp"
+        android:text="Annuler"
+        android:backgroundTint="#B3B4C1"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/supprimer"
+
+        />
+
+
+</RelativeLayout>
